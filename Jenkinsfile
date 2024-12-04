@@ -1,12 +1,12 @@
 pipeline {
     agent any
     environment {
-        CI = 'true'  // Corrected the typo
+        CI = 'true'
     }
     stages {
         stage('Build') {
             steps {
-                bat 'npm install'  // Added space after bat for readability
+                bat 'npm install'
             }
         }
         stage('Test') {
